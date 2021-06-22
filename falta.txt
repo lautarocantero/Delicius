@@ -1,0 +1,9 @@
+
+1- Crear empleados
+2- Crear combos
+3- Crear pedidos
+4- Validar con JS los formularios
+5- Crear sistema de sesiones y pedidos 
+
+mover footer y header a html
+mover css,img,scss a static y poner static al nivel de html y view
