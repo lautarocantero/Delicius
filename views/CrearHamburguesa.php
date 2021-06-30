@@ -3,7 +3,7 @@
 
 //views/CrearHamburguesas.php
 
-class CrearHamburguesa extends View{
+class FormularioHamburguesa extends View{
 
 public $hamburguesas;
 

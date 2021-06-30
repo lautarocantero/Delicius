@@ -3,7 +3,6 @@
     include '../html/header.php';
 ?>
 
-
 <div class="contenedor-formulario-crear">
     <div class="crear-formulario">
         <div class="crear-imagen">

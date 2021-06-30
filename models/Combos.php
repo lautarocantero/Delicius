@@ -7,11 +7,7 @@
             return $this->db->fetchAll();
         }
 
-        public function CrearCombos(){
-
-        }
-
-        public function InsertarCombos($precio,$imagen,$nombre,$descripcion,$hamburguesa,$bebida,$papas){
+        public function CrearCombos($precio,$imagen,$nombre,$descripcion,$hamburguesa,$bebida,$papas){
             if($this->validarNumero($precio));
             if($this->validarNombre($nombre));
             if($this->validarDescripcion($descripcion));

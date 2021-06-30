@@ -9,11 +9,7 @@
             return $this->db->fetchAll();
         }
 
-        public function CrearPapas(){
-
-        }
-
-        public function InsertarPapas($nombre,$descripcion,$precio,$imagen){
+        public function CrearPapas($nombre,$descripcion,$precio,$imagen){
 
             if($this->validarString($nombre));
             if($this->validarString($descripcion)); //modificar para la descripcion

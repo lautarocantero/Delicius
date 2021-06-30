@@ -2,7 +2,7 @@
 
 //views/CrearPapas.php
 
-class CrearPapas extends View{
+class FormularioPapas extends View{
 
 public $papas;
 

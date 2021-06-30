@@ -3,7 +3,7 @@
 
 //views/CrearBebidas.php
 
-class CrearBebidas extends View{
+class FormularioBebidas extends View{
 
     public $bebidas;
 

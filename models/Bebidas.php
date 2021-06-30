@@ -7,10 +7,6 @@
             return $this->db->fetchAll();
         }
 
-        public function CrearBebidas(){
-
-        }
-
         public function InsertarBebidas($nombre,$descripcion,$precio,$imagen){
 
             if($this->validarString($nombre));

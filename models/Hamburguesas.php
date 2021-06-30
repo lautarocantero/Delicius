@@ -11,13 +11,7 @@
                 return $this->db->fetchAll();
             }
 
-            public function CrearHamburguesa(){
-
-            }
-
-            //arreglar esto
-
-            public function InsertarHamburguesa($nombre,$descripcion,$precio,$imagen){
+            public function CrearHamburguesa($nombre,$descripcion,$precio,$imagen){
 
                 if($this->validarNombre($nombre));
                 if($this->validarDescripcion($descripcion)); //modificar para la descripcion

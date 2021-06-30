@@ -2,7 +2,7 @@
 
 //views/CrearCombos.php
 
-class CrearCombos extends View{
+class FormularioCombos extends View{
 
     public $combos;
 
