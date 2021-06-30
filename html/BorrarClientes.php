@@ -2,9 +2,9 @@
     include '../html/header.php';
 
     if(count($_GET) > 0){
-       $idhamburguesa = $_GET['hamburguesa'];
-       $hamburguesa = new Hamburguesas();
-       $hamburguesa->BorrarHamburguesa($idhamburguesa);
+       $idcliente = $_GET['cliente'];
+       $cliente = new Clientes();
+       $cliente->EliminarCliente($idcliente);
     }
 
 ?>
@@ -15,14 +15,12 @@
                 <h3 class="eliminar-subtitulo">¿Qué Deseas Eliminar?</h3>
             </div>
 
-                <form action="" method="GET" class="formulario eliminar-comida-formulario">
-                    <div class="imagen-comida" id="imagen-comida"> <!--imagen-->
-                    </div>
+                <form action="" method="GET" class="formulario eliminar-cliente-formulario">
                     <label for="nombre">nombre</label>
-                    <select name="hamburguesa" id="hamburguesa">
+                    <select name="cliente" id="cliente">
                                 <option disabled="disabled" selected>--Seleccionar--</option>
-                        <?php foreach($this->hamburguesas as $comida): ?>
-                                <option value="<?=$comida['idhamburguesa']?>"><?=$comida['nombre']?></option>
+                        <?php foreach($this->cliente as $clien): ?>
+                                <option value="<?=$clien['idcliente']?>"><?=$clien['nombre']?></option>
                         <?php endforeach; ?>
                     </select>
                     <input type="submit" value="Eliminar" class="formulario-submit">

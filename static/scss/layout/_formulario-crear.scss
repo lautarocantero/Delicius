@@ -1,26 +1,25 @@
 
-.imagen-comida{
-    height: 20vh;
-    width: 20rem;
-    border: 1px solid $primario;
+.crear-comida-formulario,.crear-cliente-formulario{
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    width: 90%;
+    
 }
 
-.contenedor-formulario-eliminar{
-    min-height: 80vh !important;
+.contenedor-formulario-crear{
+    min-height: 115vh !important;
 }
 
-.eliminar-formulario{
-    background-image: url(/build/img/tirar.jpeg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.crear-formulario{
+    background-image: url("/static/img/9.jpg");
     border-radius: 1rem;
     height: 50vh;
     margin: 5rem auto;
     position:relative;
     width: 80%;
 
-    .eliminar-overlay{
+    .crear-overlay{
         position:absolute;
         width: 100%;
         height: 100%;
@@ -30,7 +29,7 @@
         justify-content: center;
         
         
-        .eliminar-subtitulo{
+        .crear-subtitulo{
             color: $claro;
             font-size: 5rem;
             font-weight: bolder;
@@ -42,20 +41,22 @@
         margin: 2rem 0;
 
         &:hover{
-            background-color: $quinto;
-            color: $claro;
+            background-color: $secundario;
+            color: $quinto;
             cursor: pointer;
         }
     }
 
-
-}
-
-.eliminar-comida-formulario{
-    position: absolute;
-    top: 70%;
-    left: 5%;
-    width: 90%;
 }
 
 
+.error{
+    background-color: #d64161;
+    border: 1px solid $claro;
+    color: $claro;
+    text-transform: uppercase;
+    padding: 2rem;
+
+    text-align: center;
+
+}

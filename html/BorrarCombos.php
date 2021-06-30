@@ -2,9 +2,9 @@
     include '../html/header.php';
 
     if(count($_GET) > 0){
-       $idhamburguesa = $_GET['hamburguesa'];
-       $hamburguesa = new Hamburguesas();
-       $hamburguesa->BorrarHamburguesa($idhamburguesa);
+       $idcombos = $_GET['combo'];
+       $combo = new Combos();
+       $combo->BorrarCombos($idcombos);
     }
 
 ?>
@@ -19,10 +19,10 @@
                     <div class="imagen-comida" id="imagen-comida"> <!--imagen-->
                     </div>
                     <label for="nombre">nombre</label>
-                    <select name="hamburguesa" id="hamburguesa">
+                    <select name="combo" id="combo">
                                 <option disabled="disabled" selected>--Seleccionar--</option>
-                        <?php foreach($this->hamburguesas as $comida): ?>
-                                <option value="<?=$comida['idhamburguesa']?>"><?=$comida['nombre']?></option>
+                        <?php foreach($this->combos as $comb): ?>
+                                <option value="<?=$comb['idcombo']?>"><?=$comb['nombre']?></option>
                         <?php endforeach; ?>
                     </select>
                     <input type="submit" value="Eliminar" class="formulario-submit">

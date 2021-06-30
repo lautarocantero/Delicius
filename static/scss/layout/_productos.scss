@@ -34,6 +34,7 @@
         border: 1px solid $primario;
         border-radius: 1rem;
         width: 26%;
+        max-height: 55vh;
 
         .lista-productos{
             padding: 0;
@@ -110,9 +111,13 @@
             justify-content: center;
             margin: 1rem;
             
+            .producto-informacion{
+                background-color: $secundario;
+                color: $claro;
+            }
 
             .producto-imagen{
-                width: 25rem;
+                width: 35rem;
                 height: 35vh;
             }
 
@@ -121,10 +126,13 @@
                 font-size: 2rem;
                 font-style: italic;
                 margin: 1rem;
+                text-align: center;
             }
 
             .producto-descripcion{
-                text-align: left;
+                text-align: center;
+                font-size: 1.4rem;
+                padding: 1rem;
             }
 
             .producto-precio{

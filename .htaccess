@@ -1,0 +1,44 @@
+
+
+RewriteEngine on
+
+            #indice home  
+RewriteRule ^home$ controllers/delicius.php
+
+            #expositorios de comida
+
+RewriteRule ^hamburguesas$ controllers/lista_hamburguesas.php
+RewriteRule ^papas$ controllers/lista_papas.php
+RewriteRule ^bebidas$ controllers/lista_bebidas.php
+RewriteRule ^combos$ controllers/lista_combos.php
+
+            #crear comida 
+
+RewriteRule ^nueva-hamburguesa$ controllers/crear_hamburguesas.php
+RewriteRule ^nueva-papa$ controllers/crear_papas.php
+RewriteRule ^nueva-bebida$ controllers/crear_bebidas.php
+RewriteRule ^nuevo-combo$ controllers/crear_combo.php
+
+            #borrar comida 
+
+RewriteRule ^borrar-hamburguesa$ controllers/borrar_hamburguesas.php
+RewriteRule ^borrar-papa$ controllers/borrar_papas.php
+RewriteRule ^borrar-bebida$ controllers/borrar_bebidas.php
+RewriteRule ^borrar-combo$ controllers/borrar_combos.php
+
+            #listado personas
+RewriteRule ^clientes$ controllers/lista_clientes.php
+RewriteRule ^clientes$ controllers/lista_clientes.php
+
+
+            #crear
+RewriteRule  ^nuevo-cliente$ controllers/crear_cliente.php
+RewriteRule  ^nuevo-cliente$ controllers/crear_cliente.php
+
+            #borrar
+RewriteRule  ^eliminar-cliente$ controllers/borrar_clientes.php
+RewriteRule  ^eliminar-cliente$ controllers/borrar_clientes.php
+
+
+
+

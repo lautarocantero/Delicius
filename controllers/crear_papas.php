@@ -16,7 +16,7 @@
         //agregar los isset para validar
         $papita->InsertarPapas($_GET['nombre'],$_GET['descripcion'],$_GET['precio'],$_GET['imagen']);
     
-        header("Location: lista_papas.php");
+        header("Location: papas");
         
     }
     

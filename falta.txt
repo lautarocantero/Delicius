@@ -1,9 +1,31 @@
 
 1- Crear empleados
-2- Crear combos
 3- Crear pedidos
-4- Validar con JS los formularios
 5- Crear sistema de sesiones y pedidos 
 
-mover footer y header a html
-mover css,img,scss a static y poner static al nivel de html y view
+function validarFormulario(e){
+
+    if(e.target.value.length > 0){
+
+        //eliminar advertencia del dom
+        const error = document.querySelector('p.error');
+        if(error){
+            error.remove();
+        }
+        e.target.classList.remove('campo-correcto');
+        e.target.classList.add('campo-error');
+    }else{
+        e.target.classList.remove('campo-error');
+        e.target.classList.add('campo-correcto');
+        mostrarError('Hay campos sin llenar!!');
+        iniciarApp();
+    }
+
+    //validacion pasada
+    if( nombre.value !== '' && descripcion.value !== '' && precio.value !== '' && imagen.value !== ''){
+        btnCrear.disabled = false;
+        btnCrear.classList.remove('cursor-not-allowed', 'opacity-50');
+    }  
+
+}
+
