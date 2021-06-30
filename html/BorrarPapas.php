@@ -1,5 +1,5 @@
 <?php 
-    include '../models/extras/header.php';
+    include '../html/header.php';
 
     if(count($_GET) > 0){
        $idpapas = $_GET['papas'];
@@ -33,5 +33,5 @@
 </div>  
 
 <?php
-    include '../models/extras/footer.php';
+    include '../html/footer.php';
 ?>

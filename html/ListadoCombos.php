@@ -5,8 +5,8 @@
 
 <div class="opciones_comida">
     <ul class="lista-opciones">
-        <li><a href="nueva-bebida" class="link-opcion opcion-crear">Crear</a></li>
-        <li><a href="borrar-papa" class="link-opcion opcion-eliminar">Eliminar</a></li>
+        <li><a href="nuevo-combo" class="link-opcion opcion-crear">Crear</a></li>
+        <li><a href="borrar-combo" class="link-opcion opcion-eliminar">Eliminar</a></li>
     </ul>
 </div>
 
@@ -15,7 +15,7 @@
 <div class="navegador-productos">
         <ul class="lista-productos">
             <li class="item-navegador-productos">
-                <div class="link-productos ham">
+                <div class="link-productos com">
                     <a href="hamburguesas">
                         <img src="static/img/hamburguesa-3.png" alt="hamburguesa" class="link-hamburguesa">
                         <p class="link-texto">Hamburguesas</p>
@@ -50,14 +50,14 @@
     </div>
 
     <div class="productos">
-    <?php foreach($this->bebidas as $beb): ?>
+    <?php foreach($this->combos as $com): ?>
         <div class="producto">
-            <img src="static/img/<?=$beb['imagen']?>" alt="imagen" class="producto-imagen">
+            <img src="static/img/<?=$com['imagen']?>" alt="imagen" class="producto-imagen">
             <div class="producto-informacion">
-                <h4 class="producto-nombre"> <?= $beb['nombre'];  ?></h4>
-                <p class="producto-precio"> <?= $beb['precio'];  ?>$</p>
-                <p class="producto-descripcion"><?=$beb['descripcion']?></p>
-                <!-- <p class="producto-precio"> <?= $resultado['idbebida'];  ?>$</p> -->
+                <h4 class="producto-nombre"> <?= $com['nombre'];  ?></h4>
+                <p class="producto-precio"> <?= $com['precio'];  ?>$</p>
+                <p class="producto-descripcion"><?=$com['descripcion']?></p>
+                <!-- <p class="producto-precio"> <?= $resultado['idcombo'];  ?>$</p> -->
             </div>
         </div>
         <?php endforeach; ?>

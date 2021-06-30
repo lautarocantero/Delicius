@@ -13,8 +13,8 @@ class Database {
 		return self::$instance;
 	}
 
-	private function connect() {
-		$this->cn = mysqli_connect('localhost','root','','proy_delicius');
+	private function connect() {	//proy_delicius
+		$this->cn = mysqli_connect('localhost','root','','base_delicius');
 	}
 
 	public function query($q) {

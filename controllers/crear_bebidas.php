@@ -5,6 +5,7 @@
 
 require '../fw/fw.php';
 require '../models/Bebidas.php';
+require '../models/ValidarExcepsion.php';
 require '../views/CrearBebidas.php';
 
 if(count($_GET) > 0){
@@ -16,7 +17,7 @@ if(count($_GET) > 0){
     //agregar los isset para validar
     $bebida->InsertarBebidas($_GET['nombre'],$_GET['descripcion'],$_GET['precio'],$_GET['imagen']);
 
-    header("Location: lista_bebidas.php");
+    header("Location: bebidas");
     
 }
 

@@ -4,6 +4,7 @@
 
 require '../fw/fw.php';
 require '../models/Papas.php';   //clase papas de MODELS
+require '../models/ValidarExcepsion.php';
 require '../views/BorrarPapas.php';   //clase Papas
 
 

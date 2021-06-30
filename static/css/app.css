@@ -563,7 +563,7 @@ button {
   .formulario .formulario-submit {
     width: 10%; }
 
-.crear-comida-formulario {
+.crear-comida-formulario, .crear-cliente-formulario {
   position: absolute;
   top: 70%;
   left: 5%;
@@ -573,7 +573,7 @@ button {
   min-height: 115vh !important; }
 
 .crear-formulario {
-  background-image: url(./img/9.jpg);
+  background-image: url("/static/img/9.jpg");
   border-radius: 1rem;
   height: 50vh;
   margin: 5rem auto;
@@ -599,6 +599,14 @@ button {
       color: #B52E28;
       cursor: pointer; }
 
+.error {
+  background-color: #d64161;
+  border: 1px solid #fdfffc;
+  color: #fdfffc;
+  text-transform: uppercase;
+  padding: 2rem;
+  text-align: center; }
+
 .opciones_comida {
   margin-top: 2rem; }
   .opciones_comida .lista-opciones {
@@ -623,7 +631,8 @@ button {
   .productos-expositorio .navegador-productos {
     border: 1px solid #F87621;
     border-radius: 1rem;
-    width: 26%; }
+    width: 26%;
+    max-height: 55vh; }
     .productos-expositorio .navegador-productos .lista-productos {
       padding: 0; }
     .productos-expositorio .navegador-productos .item-navegador-productos {
@@ -671,16 +680,22 @@ button {
     align-items: center;
     justify-content: center;
     margin: 1rem; }
+    .productos .producto .producto-informacion {
+      background-color: #FFBB4C;
+      color: #fdfffc; }
     .productos .producto .producto-imagen {
-      width: 25rem;
+      width: 35rem;
       height: 35vh; }
     .productos .producto .producto-nombre {
       font-weight: 200;
       font-size: 2rem;
       font-style: italic;
-      margin: 1rem; }
+      margin: 1rem;
+      text-align: center; }
     .productos .producto .producto-descripcion {
-      text-align: left; }
+      text-align: center;
+      font-size: 1.4rem;
+      padding: 1rem; }
     .productos .producto .producto-precio {
       color: #B52E28;
       font-weight: bolder;
@@ -724,8 +739,27 @@ button {
       color: #fdfffc;
       cursor: pointer; }
 
-.eliminar-comida-formulario {
+.eliminar-comida-formulario, .eliminar-cliente-formulario {
   position: absolute;
   top: 70%;
   left: 5%;
   width: 90%; }
+
+.subtitulo-cliente {
+  background-color: #FFBB4C;
+  color: #F87621;
+  font-size: 5rem;
+  font-family: "Itim", cursive;
+  text-align: center;
+  text-transform: uppercase; }
+
+.clientes {
+  padding: 0.5rem;
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem; }
+  .clientes .cliente {
+    background-color: #fdfffc;
+    border: 1rem solid #FFBB4C;
+    border-radius: 1rem; }
